@@ -1,6 +1,6 @@
 # Anomaly Detection for Walmart's Online Pricing System
 
-Code for the paper "On Anomaly Detection for Walmart's Online Pricing System."
+Code for the paper "On Anomaly Detection for Walmart's Online Pricing System," authored by Jagdish Ramakrishnan, Elham Shaabani, Chao Li, and Mátyás A. Sustik.
 
 ## Packages
 
