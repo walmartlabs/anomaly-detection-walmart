@@ -250,13 +250,13 @@ if __name__ == '__main__':
 
         # add log based features
         # first cost
-        for col in (set(price_features) - set(['cost'])):
+        for col in (set(price_features) - {'cost'}):
             train[str(col) + '_cost_log'] = np.log((train[col] + 10.)/(train['cost'] + 10.))
             test[str(col) + '_cost_log'] = np.log((test[col] + 10.)/(test['cost'] + 10.))
             new_col_types.append('log_new_cost_transformed')
 
         # now price
-        for col in (set(price_features) - set(['cost', 'price'])):
+        for col in (set(price_features) - {'cost', 'price'}):
             train[str(col) + '_price_log'] = np.log((train[col] + 10.)/(train['price'] + 10.))
             test[str(col) + '_price_log'] = np.log((test[col] + 10.)/(test['price'] + 10.))
             new_col_types.append('log_new_price_transformed')
